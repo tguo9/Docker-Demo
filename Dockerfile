@@ -10,6 +10,8 @@ RUN apt-get update
 # Install base R
 RUN apt-get install r-base r-base-dev -y
 
+# Install R package here
+
 # Install the anaconda distribution of python
 RUN wget --quiet https://repo.anaconda.com/archive/Anaconda3-2019.10-Linux-x86_64.sh -O ~/anaconda.sh && \
     /bin/bash ~/anaconda.sh -b -p /opt/conda && \
@@ -24,3 +26,5 @@ RUN wget --quiet https://repo.anaconda.com/archive/Anaconda3-2019.10-Linux-x86_6
 
 # Put anaconda python in path
 ENV PATH="/opt/conda/bin:${PATH}"
+
+# Install Python package here
