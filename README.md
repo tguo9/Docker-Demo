@@ -23,3 +23,5 @@
     `docker push [Docker_Username]/[DockerHub_Repo_Name]`
 
 ### 5. Run 
+
+    `docker run --rm -v $(pwd):/home/mds522_305 tguo3/mds make -C '/home/mds522_305' all`
